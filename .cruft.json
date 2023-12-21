@@ -1,0 +1,20 @@
+{
+  "template": "https://github.com/ReproNim/reproschema-protocol-cookiecutter",
+  "commit": "30645d58a4d1aee15b6b4127a02451a6ba33ac7c",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "protocol_name": "reproschema-demo-protocol",
+      "__protocol_slug": "reproschema_demo_protocol",
+      "github_org": "ReproNim",
+      "protocol_description": "A demo protocol for the ReproSchema paperr",
+      "number_of_activities": "5",
+      "full_name": "repronim",
+      "email": "info@repronim.org",
+      "__author": "repronim <info@repronim.org>",
+      "license": "MIT",
+      "_template": "https://github.com/ReproNim/reproschema-protocol-cookiecutter"
+    }
+  },
+  "directory": null
+}
