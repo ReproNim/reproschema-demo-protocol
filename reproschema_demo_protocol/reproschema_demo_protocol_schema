@@ -1,6 +1,5 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
-	"@type": "reproschema:Protocol",
+    	"@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic","@type": "reproschema:Protocol",
 	"@id": "reproschema_demo_protocol_schema",
 	"prefLabel": {
 		"en": "Protocol1",
