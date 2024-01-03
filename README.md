@@ -1,6 +1,6 @@
 # reproschema-demo-protocol
 
-A demo protocol for the ReproSchema paperr
+A demo protocol for the ReproSchema paper
 
 ## Website
 
