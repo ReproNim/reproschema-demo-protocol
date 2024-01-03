@@ -1,0 +1,94 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+        {
+            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/43e7afab312596708c0ad4dfd45b69c8904088ae/activities/demographics_and_background_information_v1/items/"
+        }
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "demographics_schema",
+    "prefLabel": "Demographics",
+    "description": "activity to collect demographics and background of the subject",
+    "preamble": "This activity will ask for your demographics and background.",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "addProperties": [
+            {
+                "variableName": "year_of_birth",
+                "isAbout": "demo:year_of_birth"
+            },
+            {
+                "variableName": "sex",
+                "isAbout": "demo:sex"
+            },
+            {
+                "variableName": "gender_identity",
+                "isAbout": "demo:gender_identity"
+            },
+            {
+                "variableName": "gender_other_specify",
+                "isAbout": "demo:other_specify",
+                "isVis": "gender_identity.includes(-1)"
+            },
+            {
+                "variableName": "sexual_orientation",
+                "isAbout": "demo:sexual_orientation"
+            },
+            {
+                "variableName": "sexual_orientation_other_specify",
+                "isAbout": "demo:other_specify",
+                "isVis": "sexual_orientation.includes(-1)"
+            },
+            {
+                "variableName": "ethnic_category",
+                "isAbout": "demo:ethnic_category"
+            },
+            {
+                "variableName": "race_ethnicity",
+                "isAbout": "demo:race_ethnicity"
+            },
+            {
+                "variableName": "race_ethnicity_global",
+                "isAbout": "demo:race_ethnicity_global"
+            },
+            {
+                "variableName": "race_ethnicity_global_other",
+                "isAbout": "demo:race_ethnicity_global_other",
+                "isVis": "race_ethnicity_global.includes(-1)"
+            },
+            {
+                "variableName": "native_language_multiple",
+                "isAbout": "demo:native_language_multiple"
+            },
+            {
+                "variableName": "dialect",
+                "isAbout": "demo:dialect"
+            },
+            {
+                "variableName": "us_state_of_residence",
+                "isAbout": "demo:us_state_of_residence"
+            }
+        ],
+        "order": [
+            "demo:year_of_birth",
+            "demo:sex",
+            "demo:gender_identity",
+            "demo:other_specify",
+            "demo:sexual_orientation",
+            "demo:other_specify",
+            "demo:ethnic_category",
+            "demo:race_ethnicity",
+            "demo:race_ethnicity_global",
+            "demo:race_ethnicity_global_other",
+            "demo:native_language_multiple",
+            "demo:dialect",
+            "demo:us_state_of_residence"
+        ],
+        "shuffle": false,
+        "allow": [
+			"reproschema:AutoAdvance",
+			"reproschema:AllowExport"
+		]
+    }
+}

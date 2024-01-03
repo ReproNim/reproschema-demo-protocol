@@ -1,0 +1,67 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+        {
+            "activities": "https://raw.githubusercontent.com/ReproNim/reproschema-library/43e7afab312596708c0ad4dfd45b69c8904088ae/activities/",
+            "demo": "https://raw.githubusercontent.com/ReproNim/reproschema-library/43e7afab312596708c0ad4dfd45b69c8904088ae/activities/demographics_and_background_information_v1/items/"
+        }
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "psychological_questionnaire_schema",
+    "prefLabel": "Psychological questionnaire",
+    "description": "activity to collect psychological data of the participant",
+    "preamble": "This activity will ask you to rate your psychological states",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "addProperties": [
+            {
+                "variableName": "phq-9",
+                "isAbout": "activities:PHQ-9/PHQ9_schema"
+            },
+            {
+                "variableName": "gad-7",
+                "isAbout": "activities:GAD7/GAD7_schema"
+            },
+            {
+                "variableName": "pc-ptsd-5",
+                "isAbout": "activities:PC-PTSD-5/PC-PTSD-5_schema"
+            },
+            {
+                "variableName": "clinical_history_psychiatry",
+                "isAbout": "demo:clinical_history_psychiatry"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_other",
+                "isAbout": "demo:clinical_history_psychiatry_other"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_current",
+                "isAbout": "demo:clinical_history_psychiatry_current"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_current_only_some",
+                "isAbout": "demo:clinical_history_psychiatry_current_only_some"
+            },
+            {
+                "variableName": "clinical_history_psychiatry_current_only_some_other",
+                "isAbout": "demo:clinical_history_psychiatry_current_only_some_other"
+            }
+        ],
+        "order": [
+            "activities:PHQ-9/PHQ9_schema",
+            "activities:GAD7/GAD7_schema",
+            "activities:PC-PTSD-5/PC-PTSD-5_schema",
+            "demo:clinical_history_psychiatry",
+            "demo:clinical_history_psychiatry_other",
+            "demo:clinical_history_psychiatry_current",
+            "demo:clinical_history_psychiatry_current_only_some",
+            "demo:clinical_history_psychiatry_current_only_some_other"
+        ],
+        "shuffle": false,
+        "allow": [
+			"reproschema:AutoAdvance",
+			"reproschema:AllowExport"
+		]
+    }
+}
